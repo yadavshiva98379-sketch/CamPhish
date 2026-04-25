@@ -8,7 +8,7 @@ if [[ "$(uname -a)" == *"MINGW"* ]] || [[ "$(uname -a)" == *"MSYS"* ]] || [[ "$(
   windows_mode=true
   echo "Windows system detected. Some commands will be adapted for Windows compatibility."
   
-  # Define Windows-specific command replacements
+  # Define Windows-specific command replacements.
   function killall() {
     taskkill /F /IM "$1" 2>/dev/null
   }
